@@ -48,7 +48,7 @@ class _TVShowTabExplorePageState extends State<TVShowTabExplorePage> {
               ),
             ),
             SizedBox(
-              height: 250, // Adjust height as needed
+              height: 250,
               child: FutureBuilder<dynamic>(
                 future: tmdb.v3.trending.getTrending(
                     mediaType: MediaType.tv,
@@ -89,8 +89,8 @@ class _TVShowTabExplorePageState extends State<TVShowTabExplorePage> {
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
                                     'https://image.tmdb.org/t/p/w500${show['poster_path']}',
-                                    width: 150, // Adjust width as needed
-                                    height: 225, // Adjust height as needed
+                                    width: 150,
+                                    height: 225,
                                     fit: BoxFit.cover,
                                   ),
                                 ),

@@ -21,7 +21,7 @@ class DebridifyPlayerState extends State<DebridifyPlayer> {
     super.initState();
     // Play a [Media] or [Playlist].
     player.open(Media(
-        'https://23.download.real-debrid.com/d/TEXULHJDETSSO/Barbie%202023%20AMZN%204K%20WEBRip%202160p%20DD%2B5.1%20Atmos%20DoVi%20HDR%20H.265-MgB.mkv'));
+        'https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_30mb.mp4'));
   }
 
   @override
@@ -36,7 +36,6 @@ class DebridifyPlayerState extends State<DebridifyPlayer> {
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.width * 9.0 / 16.0,
-        // Use [Video] widget to display video output.
         child: Video(
           controller: controller,
           subtitleViewConfiguration: const SubtitleViewConfiguration(

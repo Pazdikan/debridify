@@ -42,7 +42,7 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
     return Scaffold(
       appBar: AppBar(
         // I don't know how to update the title to movie title
-        // The widget just doesn't want to refresh so it's now visually updating
+        // The widget just doesn't want to refresh so it's not visually updating
         title: Text(_appBarTitle),
       ),
       floatingActionButton: FloatingActionButton(
@@ -87,8 +87,8 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
                           'https://image.tmdb.org/t/p/w500${movie['poster_path']}',
-                          width: 150, // Adjust width as needed
-                          height: 225, // Adjust height as needed
+                          width: 150,
+                          height: 225,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -123,9 +123,8 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
                               movie['overview'],
                               textAlign: TextAlign.left,
                               softWrap: true,
-                              // Allow text to wrap if it's too long
                               overflow:
-                                  TextOverflow.clip, // Clip overflowing text
+                                  TextOverflow.clip,
                             ),
                           ],
                         ),

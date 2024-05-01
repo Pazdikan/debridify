@@ -90,8 +90,8 @@ class _TVShowDetailsPageState extends State<TVShowDetailsPage> {
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.network(
                             'https://image.tmdb.org/t/p/w500${show['poster_path']}',
-                            width: 150, // Adjust width as needed
-                            height: 225, // Adjust height as needed
+                            width: 150,
+                            height: 225,
                             fit: BoxFit.cover,
                           ),
                         ),

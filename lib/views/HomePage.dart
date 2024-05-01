@@ -82,8 +82,8 @@ class _HomePageState extends State<HomePage> {
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
                                     'https://image.tmdb.org/t/p/w500${movie['poster_path']}',
-                                    width: 150, // Adjust width as needed
-                                    height: 225, // Adjust height as needed
+                                    width: 150,
+                                    height: 225,
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(
-              height: 250, // Adjust height as needed
+              height: 250,
               child: FutureBuilder<dynamic>(
                 future: tmdb.v3.trending.getTrending(mediaType: MediaType.tv, timeWindow: TimeWindow.week, language: language),
                 builder: (context, snapshot) {
@@ -153,8 +153,8 @@ class _HomePageState extends State<HomePage> {
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
                                     'https://image.tmdb.org/t/p/w500${show['poster_path']}',
-                                    width: 150, // Adjust width as needed
-                                    height: 225, // Adjust height as needed
+                                    width: 150,
+                                    height: 225,
                                     fit: BoxFit.cover,
                                   ),
                                 ),

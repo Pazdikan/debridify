@@ -34,9 +34,7 @@ class _ExplorePageState extends State<ExplorePage> {
         ),
         body: TabBarView(
           children: [
-            // Contents of the first tab (Movies)
             MoviesTabExplorePage(title: "Explore movies"),
-            // Contents of the second tab (TV Shows)
             TVShowTabExplorePage(title: "Explore TV")
           ],
         ),
